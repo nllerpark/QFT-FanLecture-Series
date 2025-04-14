@@ -1,8 +1,12 @@
 \documentclass[12pt]{article}
 \usepackage{amsmath,amssymb,physics,bm}
 \usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{tcolorbox}
-\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
+\usepackage[colorlinks=true,
+            linkcolor=MidnightBlue,
+            urlcolor=RoyalBlue,
+            citecolor=OliveGreen]{hyperref}
 
 \title{\textbf{If Dirac Teaches Megumin Quantum Mechanics: A Courtroom Play}}
 \author{Junhu Park}
@@ -13,18 +17,18 @@
 
 \section*{Act 1. In the Warp Courtroom}
 
-\textbf{Scene:} The courtroom of Slaanesh in the Warp (from Warhammer 40k\cite{SlaaneshWikipedia}).  
-\href{https://en.wikipedia.org/wiki/Megumin}{Megumin}\cite{MeguminWikipedia} is charged with vaporizing three Chaos Marines with her Explosion spell.  
+\textbf{Scene:} The courtroom of Slaanesh in the Warp\cite{SlaaneshWikipedia}.  
+Megumin\cite{MeguminWikipedia} is charged with vaporizing three Chaos Marines with her Explosion spell.  
 She is aware of her actions but has not confessed in court.
 
-\href{https://en.wikipedia.org/wiki/Paul_Dirac}{Paul Dirac}\cite{DiracWikipedia} appears as her defense attorney.  
-He argues that, by the principle of quantum observation, guilt and innocence should be treated as a superposition until a measurement is made.
+Paul Dirac\cite{DiracWikipedia} appears as her defense attorney.  
+He argues that, by the principle of quantum observation\cite{vonNeumann1955}, guilt and innocence should be treated as a superposition until a measurement is made.
 
 \textbf{Co-defendant:}  
-\href{https://en.wikipedia.org/wiki/Aqua_(KonoSuba)}{Aqua}\cite{AquaWikipedia} is present in the defendant's box due to sheer misfortune, still clueless about the situation.
+Aqua\cite{AquaWikipedia} is present in the defendant's box due to sheer misfortune, still clueless about the situation.
 
 \begin{tcolorbox}[title=Dirac:]
-If the universe follows the laws of quantum mechanics, Megumin, your state is not determined until it is observed. That is, your guilt $\ket{G}$ and innocence $\ket{I}$ are in superposition:
+If the universe follows the laws of quantum mechanics\cite{Dirac1930,Griffiths2018}, Megumin, your state is not determined until it is observed. That is, your guilt $\ket{G}$ and innocence $\ket{I}$ are in superposition:
 \[
 \ket{\Psi} = \alpha \ket{G} + \beta \ket{I}, \quad \text{with } |\alpha|^2 + |\beta|^2 = 1.
 \]
@@ -34,11 +38,11 @@ If the universe follows the laws of quantum mechanics, Megumin, your state is no
 
 \textbf{Dirac (narration):}
 
-The verdict operator of the court is quantized as follows:
+The verdict operator of the court is quantized\cite{NielsenChuang2010} as follows:
 \[
 \hat{H}_{\text{Justice}} \ket{G} = +1 \ket{G}, \quad \hat{H}_{\text{Justice}} \ket{I} = 0 \ket{I}
 \]
-This means verdicts are not emotional gradients, but discrete eigenvalues. One cannot define innocence without defining guilt. That is the quantum identity.
+This means verdicts are not emotional gradients, but discrete eigenvalues. One cannot define innocence without defining guilt. That is the quantum identity\cite{Dirac1930}.
 
 \section*{Act 2. The Interference of Guilt}
 
@@ -51,14 +55,14 @@ and if the phase is opposite,
 \[
 \ket{\Psi} = \frac{1}{\sqrt{2}}(\ket{G} - \ket{I}),
 \]
-then destructive interference reduces the observable probability of guilt.
+then destructive interference reduces the observable probability of guilt\cite{Griffiths2018}.
 \end{tcolorbox}
 
 \section*{Interlude II: Uncertainty of Verdict and Sentence}
 
 \textbf{Dirac (aside):}
 
-If the guilt operator $\hat{G}$ and the sentence operator $\hat{P}$ do not commute,
+If the guilt operator $\hat{G}$ and the sentence operator $\hat{P}$ do not commute\cite{Griffiths2018},
 \[
 [\hat{G}, \hat{P}] \neq 0 \Rightarrow \Delta G \, \Delta P \geq \frac{\hbar}{2}
 \]
@@ -71,7 +75,7 @@ then a precise verdict implies uncertainty in sentencing, and vice versa.
 \]
 
 \begin{tcolorbox}[title=Dirac:]
-If you consent to measurement, the wavefunction will collapse, and reality will choose a single branch.
+If you consent to measurement, the wavefunction will collapse\cite{vonNeumann1955}, and reality will choose a single branch.
 \end{tcolorbox}
 
 \begin{tcolorbox}[title=Megumin:]
@@ -85,28 +89,28 @@ Measurement result: $\ket{I}$. Not guilty.
 \end{tcolorbox}
 
 \begin{tcolorbox}[title=Dirac:]
-Her guilt component vanished into orthogonality, and Aqua became entangled with the $\ket{G}$ state.
+Her guilt component vanished into orthogonality, and Aqua became entangled with the $\ket{G}$ state\cite{NielsenChuang2010}.
 \end{tcolorbox}
 
 \textbf{Dirac (internal monologue):}
 
-Even if Megumin knew she was guilty, unless she declares it, no external observation occurs. Hence, the wavefunction remains uncollapsed. This is the puzzle left by Wigner's friend.
+Even if Megumin knew she was guilty, unless she declares it, no external observation occurs. Hence, the wavefunction remains uncollapsed. This is the puzzle left by Wigner's friend\cite{Zurek2002}.
 
 \section*{Interlude III: State Reconstruction}
 
 \textbf{Dirac (narration):}
 
-If the court reconstructs the density matrix $\rho$ from testimonies,
+If the court reconstructs the density matrix $\rho$ from testimonies\cite{NielsenChuang2010},
 \[
 \rho = \sum_{i,j} p_{ij} \ket{i}\bra{j},
 \]
-then this is quantum state tomography. Truth is reconstructed from observation.
+then this is quantum state tomography. Truth is reconstructed from observation\cite{Zurek2002}.
 
 \section*{Act 5. ...}
 
 \textit{(Empty stage. The curtain falls.)}
 
-\textbf{Note:} An unobserved world is neither real nor unreal. The verdict in quantum court is always open, and the final question of physics remains: \emph{Who observed it?}
+\textbf{Note:} An unobserved world is neither real nor unreal. The verdict in quantum court is always open, and the final question of physics remains: \emph{Who observed it?}\cite{Carroll2004}
 
 \newpage
 \section*{References}
@@ -115,7 +119,7 @@ then this is quantum state tomography. Truth is reconstructed from observation.
 \bibitem{vonNeumann1955} Von Neumann, J. \textit{Mathematical Foundations of Quantum Mechanics}. Princeton University Press, 1955.
 \bibitem{Griffiths2018} Griffiths, D. J. \textit{Introduction to Quantum Mechanics}. Pearson, 2018.
 \bibitem{NielsenChuang2010} Nielsen, M. A. \& Chuang, I. L. \textit{Quantum Computation and Quantum Information}. Cambridge University Press, 2010.
-\bibitem{Carroll2004} Carroll, S. \textit{Spacetime and Geometry}. Addison-Wesley, 2004.
+\bibitem{Carroll2004} Carroll, S. M. (2004). \textit{Spacetime and Geometry: An Introduction to General Relativity}. Addison Wesley.
 \bibitem{Zurek2002} Zurek, W. H. ``Decoherence and the Transition from Quantum to Classical---Revisited.'' \textit{Los Alamos Science}, 2002.
 \bibitem{DiracWikipedia} \raggedright ``Paul Dirac.'' \textit{Wikipedia}. \url{https://en.wikipedia.org/wiki/Paul_Dirac}
 \bibitem{MeguminWikipedia} ``Megumin.'' \textit{Wikipedia}. \url{https://en.wikipedia.org/wiki/Megumin}
