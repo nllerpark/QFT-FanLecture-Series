@@ -1,0 +1,16 @@
+image: atlassian/default-image:3
+
+pipelines:
+  default:
+    - step:
+        name: Mirror to GitHub
+        script:
+          - AUTHOR_EMAIL=$(git log -1 --format="%ae" "$BITBUCKET_COMMIT")
+          - |
+            if [ "$AUTHOR_EMAIL" = "$GH_OWNER_EMAIL" ]; then
+              echo "블랙잭님의 커밋입니다. GitHub에 미러링합니다."
+              git remote add github git@github.com:nllerpark/QFT-FanLecture-Series.git
+              git push --mirror github
+            else
+              echo "작성자가 블랙잭님이 아니므로 업로드를 건너뜁니다."
+            fi
