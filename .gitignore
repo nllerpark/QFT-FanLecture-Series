@@ -310,3 +310,6 @@ TSWLatexianTemp*
 *.yml
 *.yaml
 *.json
+
+.DS_Store
+Thumbs.db  
